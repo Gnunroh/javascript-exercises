@@ -1,9 +1,12 @@
-const ftoc = function() {
-
-};
-
-const ctof = function() {
-
+const ftoc = function(fahrenheit) {
+    let celsius = (fahrenheit - 32) * 0.5556;
+    let roundedCelsius = Math.round(celsius * 10) / 10;
+    return roundedCelsius;
+}
+const ctof = function(celsius) {
+  let fahrenheit = (celsius * 1.8) + 32;
+  let roundedFahrenheit = Math.round(fahrenheit * 10) / 10;
+  return roundedFahrenheit;
 };
 
 // Do not edit below this line
